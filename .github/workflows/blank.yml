@@ -22,6 +22,6 @@ jobs:
       - uses: peter-evans/repository-dispatch@v2
         with:
           token: ${{ secrets.PAT }}
-          repository: joy-and-meaning/receiver
+          repository: stolostron/cluster-proxy
           event-type: changes
           client-payload: '{"from": "trigger"}'
